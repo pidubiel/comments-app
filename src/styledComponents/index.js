@@ -5,5 +5,6 @@ import SingleCommentStyles from './singleCommentStyles';
 import CommentListStyles from './commentListStyles';
 import AddCommentContainer from './addCommentContainer';
 import StyledFormGroup from './styledFormGroup';
+import CommentListContainer from './commentListContainer';
 
-export { GlobalStyles, MainContainer, NavigationList, SingleCommentStyles, CommentListStyles, AddCommentContainer, StyledFormGroup };
+export { GlobalStyles, MainContainer, NavigationList, SingleCommentStyles, CommentListStyles, AddCommentContainer, StyledFormGroup, CommentListContainer };
