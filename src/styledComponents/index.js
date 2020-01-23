@@ -1,3 +1,5 @@
 import GlobalStyles from './globalStyles';
+import MainContainer from './mainContainer';
+import NavigationList from './navigationList';
 
-export { GlobalStyles };
+export { GlobalStyles, MainContainer, NavigationList };
