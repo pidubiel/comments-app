@@ -1,13 +1,27 @@
 import React from 'react';
+import { AddCommentForm } from '../../components';
+import { connect } from 'react-redux';
+import { fetchCommentsIfNeeded } from '../../redux/comments/commentsActions';
+import { MainContainer } from '../../styledComponents';
 
 class AddComment extends React.Component {
+  componentDidMount() {
+    const { fetchCommentsIfNeeded } = this.props;
+    fetchCommentsIfNeeded();
+  }
   render() {
     return (
-      <>
-        <h1>AddComment</h1>
-      </>
+      <MainContainer>
+        <AddCommentForm />
+      </MainContainer>
     );
   }
 }
 
-export default AddComment;
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchCommentsIfNeeded: () => dispatch(fetchCommentsIfNeeded())
+  };
+};
+
+export default connect(null, mapDispatchToProps)(AddComment);
