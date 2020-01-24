@@ -33,12 +33,12 @@ const SingleComment = ({ data, addToFav, removeFromFav, match }) => {
   const renderButton = () => {
     if (data.isFav) {
       if (isInFavPath) {
-        return <button onClick={() => removeFromFav(data)}>Usuń z ulubionych</button>;
+        return <button onClick={() => removeFromFav(data)}>Usuń</button>;
       } else {
-        return <h5>Polubiono</h5>;
+        return <h5>Dodano do wybranych</h5>;
       }
     } else {
-      return <button onClick={() => addToFav(data)}>Dodaj do ulubionych</button>;
+      return <button onClick={() => addToFav(data)}>Dodaj do wybranych</button>;
     }
   };
   return (

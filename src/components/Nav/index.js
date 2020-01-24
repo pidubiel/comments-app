@@ -10,7 +10,7 @@ const Nav = () => {
           <Link to='/'>Strona główna</Link>
         </li>
         <li>
-          <Link to='/favourites'>Ulubione komentarze</Link>
+          <Link to='/favourites'>Wybrane komentarze</Link>
         </li>
         <li>
           <Link to='/add-comment'>Dodaj komentarz</Link>
