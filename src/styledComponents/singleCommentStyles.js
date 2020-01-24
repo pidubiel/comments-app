@@ -10,6 +10,7 @@ const SingleCommentContainer = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #121016;
+  min-height: 300px;
 
   p {
     text-align: center;
